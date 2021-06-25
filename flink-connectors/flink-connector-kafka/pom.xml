@@ -215,13 +215,6 @@ under the License.
 						<goals>
 							<goal>test-jar</goal>
 						</goals>
-						<configuration>
-							<includes>
-								<include>**/KafkaTestEnvironmentImpl*</include>
-								<include>META-INF/LICENSE</include>
-								<include>META-INF/NOTICE</include>
-							</includes>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
@@ -239,11 +232,6 @@ under the License.
 								<!-- Globally exclude maven metadata, because it may accidentally bundle files we don't intend to -->
 								<addMavenDescriptor>false</addMavenDescriptor>
 							</archive>
-							<includes>
-								<include>**/KafkaTestEnvironmentImpl*</include>
-								<include>META-INF/LICENSE</include>
-								<include>META-INF/NOTICE</include>
-							</includes>
 						</configuration>
 					</execution>
 				</executions>
